@@ -14,7 +14,7 @@ namespace WebApplication1.Controller
 
         public string CadastroPessoa(/*string nome, string cpf*/)
         {
-            string retorno = cmd.CommandText = "SELECT * FROM TB_ADMIN"; 
+            string retorno = cmd.CommandText = "SELECT * FROM TB_ADMIN";
 
             //cmd.Parameters.AddWithValue("",);
             try
@@ -22,7 +22,7 @@ namespace WebApplication1.Controller
                 cmd.Connection = conexao.conectar();
                 cmd.ExecuteNonQuery();
                 conexao.desconectar();
-                this.mensagem = "Cadastrado com Sucesso";
+                this.mensagem = "Cadastrado com Sucess";
             }
             catch (SqlException e)
             {
